@@ -1,15 +1,8 @@
-// new Date().getFullYear()
-// const date = document.querySelector('.date');
-// date.innerHTML = new Date.getFullYear();
+// Set date
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
 
-/*
-getBoundingClientRect() - 클라이언트 길이만큼 보여주기
-const linksHeight = links.getBoundingClientRect().hright;
-links-container에는 height가 0이기에 links를 가지고 높이를 가져옴
-
-CSS보다 JS에서 준 스타일을 더 우선하기에 !import 사용 4:04:40 참고
-*/
-//Show nav or Hidden nav
+// Show nav or Hidden nav
 const linksContainer = document.querySelector('.links-container');
 const links = document.querySelector('.links');
 const menu = document.querySelector('.nav-toggle');
@@ -25,11 +18,9 @@ menu.addEventListener('click', function(){
 });
 
 
-/*
-window.pageYOffset() -> 현재 스크롤 한 높이를 0부터 리턴해줌
-*/
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', function(){
+  // Fixed a navbar
   const scrollHeight = window.pageYOffset;
   const navHeight = nav.getBoundingClientRect().height;
   if(navHeight < scrollHeight) {
@@ -37,11 +28,17 @@ window.addEventListener('scroll', function(){
   } else {
     nav.classList.remove('fixed-nav');
   }
+
+  // setup back to top link
+  const topLink = document.querySelector('.top-link');
+  if(scrollHeight > 350) {
+    topLink.classList.add('show-link');
+  } else {
+    topLink.classList.remove('show-link');
+  }
 });
 
-/*
-abc.slice(1) -> bc
-*/
+// Smooth scroll
 const scrollLinks = document.querySelectorAll('.scroll-link');
 scrollLinks.forEach(function(link){
   link.addEventListener('click', function(e){
