@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/04dd8df0d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css"/>
+  <title>Scroll</title>
+</head>
+<body>
+  <header id="home">
+    <nav id="nav">
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./assets/google.png" class="nav-logo" alt="google"/>
+          <button type="button" class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="scroll-link">About</a>
+            </li>
+            <li>
+              <a href="#services" class="scroll-link">Services</a>
+            </li>
+            <li>
+              <a href="#tours" class="scroll-link">Tours</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <aside class="banner">
+      <div class="container">
+        <h1>Scroll Project</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Voluptate, delectus alias?
+          Nam consequuntur a reiciendis id incidunt? Doloremque,
+          tempore voluptates?
+        </p>
+        <a href="#tours" class="scroll-link btn btn-white">
+          Explore tours
+        </a>
+      </div>
+    </aside>
+  </header>
+
+  <section id="about">
+    <h1 class="hidden">About section</h1>
+    <article>
+      <h1 class="title">About <span>us</span></h1>
+    </article>
+  </section>
+
+  <section id="services">
+    <h1 class="hidden">Services section</h1>
+    <article>
+      <h1 class="title">Our <span>services</span></h1>
+    </article>
+  </section>
+
+  <section id="tours">
+    <h1 class="hidden">Tours section</h1>
+    <article>
+      <h1 class="title">Featured <span>tours</span></h1>
+    </article>
+  </section>
+
+  <footer class="footer-section">
+    <p>
+      copyright &copy; backroads travel tours company
+      <span id="date">2022</span>. all rights reserved
+    </p>
+
+    <!-- back to top button -->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* html {scroll-behavior: smooth} -> 부드럽게 스크롤 됨*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow:0 1px 3px rgba(117, 117, 117, 0.2);
+}
+
+.fixed-nav .links a {
+  color: #171717;
+}
+
+nav {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.nav-toggle {
+  font-size: 1rem;
+  color: #545454;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+}
+
+.links a {
+  background-color: #fff;
+  color: #242424;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.75rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    background-color: transparent;
+  }
+
+  .nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links-container {
+    height: auto !important;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .links a {
+    background-color: transparent;
+    color: #fff;
+    margin: 0 1rem;
+    padding: 0;
+  }
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.container h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container p {
+  color: #fff;
+  max-width: 25rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #171717;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  font-size: 0.875rem;
+  border: 2px solid #171717;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.btn-white {
+  border-color: #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title span {
+  color:rgba(50, 160, 164, 0.5);
+}
+
+#about, #services, #tours {
+  height: 80vh;
+  background-color: #ececec;
+}
+
+#services {
+  background-color: #fff;
+}
+
+.footer-section {
+  background-color: #21222d;
+  padding: 5rem 1rem;
+}
+
+.footer-section p {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.top-link {
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: rgb(19, 184, 184);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  /* visibility: hidden;
+  z-index: -100; */
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
