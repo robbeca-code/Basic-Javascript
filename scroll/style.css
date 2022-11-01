@@ -193,8 +193,8 @@ header {
   place-items: center;
   border-radius: 8px;
   color: #fff;
-  /* visibility: hidden;
-  z-index: -100; */
+  visibility: hidden;
+  z-index: -100;
 }
 
 .show-link {
