@@ -63,17 +63,5 @@ form.addEventListener('submit', function(e){
     }).join("");
 
     result.innerHTML = tempText;
-
-    /* 이러면 result라는 태그에 마지막 1개만 들어가게 돼서 틀린 코드이다. */
-    // for(let i=0; i<texts.length; i++){
-    //   const title = texts[i].title;
-    //   const content = texts[i].content;
-    //   result.innerHTML = `
-    //                         <p class="result">
-    //                           <strong>${title}</strong>
-    //                           <span>${content}<span>
-    //                         </p>
-    //                       `;
-    // }
   }
 });
