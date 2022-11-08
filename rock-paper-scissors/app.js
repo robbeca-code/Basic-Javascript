@@ -3,20 +3,11 @@ let computerScore = 0;
 const userScore_span = document.getElementById('user-score');
 const compScore_span = document.getElementById('comp-score');
 const scoreBoard_div = document.querySelector('.score-board');
-const result_div = document.querySelector('.result');
-const rock_button = document.getElementById('rock');
-const paper_button = document.getElementById('paper');
-const scissors_button = document.getElementById('scissors');
+const result_p = document.querySelector('.result > p');
+const rock_button = document.getElementById('r');
+const paper_button = document.getElementById('p');
+const scissors_button = document.getElementById('s');
 
-function upUserScore() {
-  ++userScore;
-  userScore_span.textContent = userScore;
-}
-
-function upComputerScore() {
-  ++computerScore;
-  compScore_span.textContent = computerScore;
-}
 
 function getComputerChoice() {
   const choices = ['r', 'p', 's'];
@@ -25,42 +16,60 @@ function getComputerChoice() {
   return choices[randomNumber];
 }
 
+function getItem(item) {
+  if(item === 'r') return 'Rock';
+  else if(item === 'p') return 'Paper';
+  return 'Scissors';
+}
+
+function win(userChoice, compChoice) {
+  ++userScore;
+  userScore_span.textContent = userScore;
+
+  result_p.innerHTML = `${getItem(userChoice)}(user) covers ${getItem(compChoice)}(comp). You win!`;
+
+  const userChoice_button = document.getElementById(userChoice);
+  userChoice_button.classList.add('green-glow');
+  setTimeout(() => userChoice_button.classList.remove('green-glow'), 400);
+}
+
+function lose(userChoice, compChoice) {
+  ++computerScore;
+  compScore_span.textContent = computerScore;
+
+  result_p.innerHTML = `${getItem(userChoice)}(user) lose to ${getItem(compChoice)}(comp). You lose...`;
+
+  const userChoice_button = document.getElementById(userChoice);
+  userChoice_button.classList.add('red-glow');
+  setTimeout(() => userChoice_button.classList.remove('red-glow'), 400);
+}
+
+function draw(userChoice, compChoice) {
+  result_p.innerHTML = `${getItem(userChoice)}(user) is equal to ${getItem(compChoice)}(comp). It's a draw.`;
+
+  const userChoice_button = document.getElementById(userChoice);
+  userChoice_button.classList.add('gray-glow');
+  setTimeout(() => userChoice_button.classList.remove('gray-glow'), 400);
+}
+
 function game(userChoice) {
   const computerChoice = getComputerChoice();
 
   switch (userChoice + computerChoice) {
     case 'rs':
-      result_div.innerHTML = '<p>Rock(user) covers Scissors(comp). You win!</p>';
-      upUserScore();
-      break;
     case 'pr':
-      result_div.innerHTML = '<p>Paper(user) covers Rock(comp). You win!</p>';
-      upUserScore();
-      break;
     case 'sp':
-      result_div.innerHTML = '<p>Scissors(user) covers Paper(comp). You win!</p>';
-      upUserScore();
+      win(userChoice, computerChoice);
       break;
     case 'rp':
-      result_div.innerHTML = '<p>Rock(user) loses to Paper(comp). You lose...</p>';
-      upComputerScore();
-      break;
     case 'ps':
-      result_div.innerHTML = '<p>Paper(user) loses to Scissors(comp). You lose...</p>';
-      upComputerScore();
-      break;
     case 'sr':
-      result_div.innerHTML = '<p>Scissors(user) loses to Rock(comp). You lose...</p>';
-      upComputerScore();
+      lose(userChoice, computerChoice);
       break;
     case 'rr':
-      result_div.innerHTML = "<p>Rock(user) is equal to Rock(comp). It's a draw.</p>";
-      break;
     case 'pp':
-      result_div.innerHTML = "<p>Paper(user) is equal to Paper(comp). It's a draw.</p>";
-      break;
     case 'ss':
-      result_div.innerHTML = "<p>Scissors(user) is equal to Scissors(comp). It's a draw.</p>";
+      draw(userChoice, computerChoice);
       break;
   }
 }
