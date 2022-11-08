@@ -65,10 +65,8 @@ header > .title {
 }
 
 .choices {
-  display: flex;
-  justify-content: space-between;
-  max-width: 30vw;
   margin: 2rem auto;
+  text-align: center;
 }
 
 .btn {
@@ -81,8 +79,24 @@ header > .title {
   border-radius: 50%;
   border: 3px solid #fff;
   padding: 0.4rem 0.4rem;
+  margin: 0 0.7rem;
   overflow: hidden;
   cursor: pointer;
+}
+
+.green-glow {
+  border: 3px solid rgb(20, 178, 20);
+  box-shadow: 1px 1px 2px rgb(33, 205, 33);
+}
+
+.red-glow {
+  border: 3px solid rgb(244, 38, 38);
+  box-shadow: 0px 1px 2px rgb(242, 65, 65);
+}
+
+.gray-glow {
+  border: 3px solid rgb(153, 153, 153);
+  box-shadow: 0px 1px 2px rgb(191, 191, 191);
 }
 
 .choice > img {
@@ -91,11 +105,11 @@ header > .title {
   object-fit: contain;
 }
 
-#rock > img {
+#r > img {
   width: 60px;
 }
 
-#paper > img {
+#p > img {
   width: 50px;
 }
 
