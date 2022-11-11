@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"/>
+  <title>Simon Game</title>
+</head>
+<body>
+  <section class="container">
+    <div class="outer-circle">
+      <div class="color green"></div>
+      <div class="color red"></div>
+      <div class="color yellow"></div>
+      <div class="color blue"></div>
+    </div>
+    <div class="inner-circle">
+      <header>
+        <h2 class="title">SIMON!</h2>
+      </header>
+      <div class="control-container">
+        <div class="input-style">
+          <input id="power" type="checkbox"/>
+          <label for="power">POWER</label>
+        </div>
+        <button id="start" type="button">Start</button>
+        <div class="input-style">
+          <input id="strict" type="checkbox"/>
+          <label for="strict">STRICT</label>
+        </div>
+      </div>
+      <div class="count-container">
+        <div class="count-box">
+          <span class="count">--</span>
+        </div>
+        <span>COUNT</span>
+      </div>
+    </div>
+  </section>
+  <script src="./app.js" defer></script>
+</body>
+</html>
