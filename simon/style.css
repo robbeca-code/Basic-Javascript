@@ -34,28 +34,28 @@ body {
   position: absolute;
 }
 
-.green {
+.top-left {
   background-color: green;
   top: 0;
   left: 0;
   border-right: 4px solid #171717;
 }
 
-.red {
+.top-right {
   background-color: rgb(181, 19, 19);
   top: 0;
   left: 15rem;
   border-bottom: 4px solid #171717;
 }
 
-.blue {
+.bottom-right {
   background-color: blue;
   top: 15rem;
   left: 15rem;
   border-left: 4px solid #171717;
 }
 
-.yellow {
+.bottom-left {
   background-color: yellow;
   top: 15rem;
   left: 0;
