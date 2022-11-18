@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  margin-top: 1rem;
+}
+
+.score-container {
+  margin-bottom: 2rem;
+}
+
+.score-container > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-container > img {
+  width: 295px;
+}
