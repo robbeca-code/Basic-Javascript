@@ -18,9 +18,29 @@
   margin-bottom: 2rem;
 }
 
+.result {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 10rem auto;
+}
+
 .score-container > span {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.restart {
+  display: none;
+  border: 1px solid #949494;
+  border-radius: 20px;
+  background-color: #ef5e54;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.restart.show {
+  display: block;
 }
 
 .card-container {
