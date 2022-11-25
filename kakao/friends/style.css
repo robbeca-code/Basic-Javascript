@@ -97,7 +97,7 @@ button {
   margin-bottom: var(--margin);
 }
 
-.multy-profile > .profile-img {
+.multy-info > .profile-img {
   background-color: var(--clr-gray);
   width: 60px;
   height: 60px;
@@ -119,7 +119,7 @@ button {
   margin-top: var(--margin);
 }
 
-.update-items {
+.update-info {
   display: flex;
 }
 
@@ -201,4 +201,14 @@ button {
 
 .gnb-item.click {
   color: #171717;
+}
+
+
+/* Profile Show Button */
+.profile-hidden {
+  transform: rotate(-180deg);
+}
+
+.info-hidden {
+  display: none;
 }
