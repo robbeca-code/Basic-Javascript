@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/04dd8df0d5.js" crossorigin="anonymous"></script>
+  <title>Friends</title>
+</head>
+<body>
+  <main class="container">
+    <header class="container-title">
+      <h1>친구</h1>
+      <ul class="setting">
+        <li class="setting-item">
+          <button type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </li>
+        <li class="setting-item">
+          <button type="button">
+            <i class="fa-solid fa-user-plus"></i>
+          </button>
+        </li>
+        <li class="setting-item">
+          <button type="button">
+            <i class="fa-solid fa-music"></i>
+          </button>
+        </li>
+        <li class="setting-item">
+          <button type="button">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </li>
+      </ul>
+    </header>
+  
+    <aside class="banner">
+      <img src="./assets/도시락 이벤트 작게또.png" alt="도시락 이벤트 배너"/>
+    </aside>
+  
+    <section class="container-content">
+      <h1 class="hidden">
+        친구 페이지
+      </h1>
+  
+      <article class="user-profile">
+        <button type="button" class="my-profile">
+          <img src="./assets/유튜브_기본프로필_하늘색.jpg" alt="허수연 프로필 사진"/>
+        </button>
+        <h2 class="user-name">허수연</h2>
+      </article>
+  
+      <article class="multy-profile">
+        <div class="title">
+          <h4>내 멀티프로필</h4>
+          <button type="button" class="profile-show">
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
+        </div>
+        <button type="button" class="profile-img">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <span>친구별로 다른 프로필을 설정해보세요!</span>
+      </article>
+  
+      <article class="update-profile">
+        <div class="title">
+          <h4>업데이트한 친구 <span class="update-count">0</span></h4>
+          <button type="button" class="profile-show">
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
+        </div>
+        <div class="update-items">
+          <div class="update-item">
+            <button type="button" class="profile-img">
+              <img src="./assets/party.jpg" alt="홍길동"/>
+            </button>
+            <span>홍길동</span>
+          </div>
+          <div class="update-item">
+            <button type="button" class="profile-img">
+              <img src="./assets/kang.jpg" alt="강미래"/>
+            </button>
+            <span>강미래</span>
+          </div>
+        </div>
+        
+      </article>
+  
+      <article class="channel">
+        <div class="title">
+          <h4>채널</h4>
+          <button type="button" class="profile-show">
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
+        </div>
+      </article>
+  
+      <article class="friends">
+        <div class="title">
+          <h4>친구 <span class="friends-count">0</span></h4>
+          <button type="button" class="profile-show">
+            <i class="fa-solid fa-caret-up"></i>
+          </button>
+        </div>
+        <ol class="friends-list">
+          <li class="friends-item">
+            <div class="info">
+              <button type="button" class="profile-img">
+                <img src="./assets/kang.jpg" alt="강미래"/>
+              </button>
+              <h3>강미래</h3>
+            </div>
+            <div class="profile-music">
+              <span>Hype boy - NewJeans</span>
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </li>
+          <li class="friends-item">
+            <div class="info">
+              <button type="button" class="profile-img">
+                <img src="./assets/cat.jpg" alt="나두리"/>
+              </button>
+              <h3>나두리</h3>
+            </div>
+          </li>
+          <li class="friends-item">
+            <div class="info">
+              <button type="button" class="profile-img">
+                <img src="./assets/katthult.jpg" alt="이지환"/>
+              </button>
+              <h3>이지환</h3>
+            </div>
+          </li>
+          <li class="friends-item">
+            <div class="info">
+              <button type="button" class="profile-img">
+                <img src="./assets/party.jpg" alt="홍길동"/>
+              </button>
+              <div class="input-state">
+                <h3>홍길동</h3>
+                <span class="state">🐾</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </article>
+    </section>
+    <nav class="gnb">
+      <button type="button" class="gnb-item click">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <button type="button" class="gnb-item">
+        <i class="fa-regular fa-comment"></i>
+      </button>
+      <button type="button" class="gnb-item">
+        <i class="fa-solid fa-eye"></i>
+      </button>
+      <button type="button" class="gnb-item">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <button type="button" class="gnb-item">
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+    </nav>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
