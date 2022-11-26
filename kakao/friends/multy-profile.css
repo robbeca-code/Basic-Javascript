@@ -1,0 +1,149 @@
+:root {
+  --clr-gray: rgb(172, 172, 172);
+  --clr-black: #171717;
+  --myProfile-marin-right: 1.4rem;
+  --profile-margin-right: 0.7rem;
+  --margin: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 616px;
+  height: 650px;
+  margin: 0 auto;
+  background: url(./assets/gray.png) center/cover no-repeat;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+/* Header */
+.grid-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--margin);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.delete {
+  color: var(--clr-gray);
+}
+
+.nav-text {
+  margin-left: var(--profile-margin-right);
+}
+
+/* Main Controls */
+form {
+  width: 100%;
+}
+.main-controls {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+  margin-bottom: var(--margin);
+}
+
+.profile-img {
+  position: relative;
+}
+
+.img-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.upload-img {
+  display: none;
+}
+
+.profile-img > .upload-button {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
+
+.upload-button {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.write {
+  border-bottom: 1px solid var(--clr-gray);
+  width: 90%;
+  position: relative;
+}
+
+.write > input {
+  width: 100%;
+  text-align: center;
+}
+
+.user-name > input {
+  font-size: 1.3rem;
+}
+
+.write > i {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.side-controls {
+  display: flex;
+  justify-content: space-around;
+  line-height: 40px;
+  align-items: center;
+}
