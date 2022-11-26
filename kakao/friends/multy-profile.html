@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/04dd8df0d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./multy-profile.css">
+  <title>Test JS</title>
+</head>
+<body>
+  <main class="container">
+    <section class="grid">
+      <h1 class="hidden">
+        멀티 프로필 만들기
+      </h1>
+      <header class="grid-header">
+        <div class="nav">
+          <button type="button" class="exit">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <span class="nav-text">만들기</span>
+        </div>
+        <div class="nav">
+          <button type="button" class="delete">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <button type="button" class="nav-text">
+            완료
+          </button>
+        </div>
+      </header>
+  
+      <form action="" method="POST">
+        <div class="main-controls">
+          <div class="profile-img">
+            <div class="img-container">
+              <img src="./assets/유튜브_기본프로필_하늘색.jpg" alt="profile image"/>
+            </div>
+            <input type="file" class="upload-img"/>
+            <button type="button" class="upload-button">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+          </div>
+          
+          <div class="write user-name">
+            <input type="text" minlength="1" maxlength="20"/>
+            <i class="fa-solid fa-pen"></i>
+          </div>
+          <div class="write">
+            <input type="text" minlength="0" maxlength="60"/>
+            <i class="fa-solid fa-pen"></i>
+          </div>
+        </div>
+        
+        <div class="side-controls">
+          <div class="upload-button">
+            <i class="fa-solid fa-camera"></i>
+            <input type="file" class="upload-img"/>
+          </div>
+          
+          <i class="fa-solid fa-music"></i>
+          <i class="fa-solid fa-icons"></i>
+          <i class="fa-solid fa-face-smile"></i>
+          <i class="fa-solid fa-font"></i>
+          <i class="fa-solid fa-image"></i>
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+      </form>
+    </section>
+  </main>
+  
+
+  <script src="./app.js"></script>
+</body>
+</html>
