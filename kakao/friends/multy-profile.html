@@ -16,7 +16,7 @@
       </h1>
       <header class="grid-header">
         <div class="nav">
-          <button type="button" class="exit">
+          <button type="button" class="exit" onclick="history.back()">
             <i class="fa-solid fa-arrow-left"></i>
           </button>
           <span class="nav-text">만들기</span>
@@ -37,7 +37,7 @@
             <div class="img-container">
               <img src="./assets/유튜브_기본프로필_하늘색.jpg" alt="profile image"/>
             </div>
-            <input type="file" class="upload-img"/>
+            <input type="file" class="upload-img" accept=".gif, .jpg, .png"/>
             <button type="button" class="upload-button">
               <i class="fa-solid fa-camera"></i>
             </button>
@@ -71,6 +71,6 @@
   </main>
   
 
-  <script src="./app.js"></script>
+  <script src="./multy-profile.js"></script>
 </body>
 </html>
